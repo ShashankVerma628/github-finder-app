@@ -28,6 +28,7 @@ function UserSearch({ setQuery }) {
     dispatch({ type: "CLEAR_USERS", payload: [] });
   };
 
+  console.log("token", process.env.GITHUB_TOKEN);
   return (
     <div className="form-container container">
       <form onSubmit={handleSubmit} className="form">
